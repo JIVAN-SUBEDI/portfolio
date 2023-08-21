@@ -313,6 +313,8 @@ text-align: center;
   .card{
     border-radius: 25px;
     background-color: #FFF;
+
+    overflow: hidden;
   }
   .image-content,
   .card-content{
@@ -373,6 +375,7 @@ text-align: center;
     font-size: 14px;
     color: #707070;
     text-align: center;
+    height: 220px;
   }
   .button{
     border: none;
@@ -520,7 +523,7 @@ text-align: center;
     border-radius: 5px;
     font-size: 1rem;
   }
-  #blog{
+  #services{
     min-height: 110vh;
     background-color: #f3f3f3;
     border-bottom: 1px solid black;
@@ -529,82 +532,14 @@ text-align: center;
     /* justify-content: center; */
     align-items: center;
   }
-  #blog h1{
+  #services h1{
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
 }
-#blog .cardBlog{
-  overflow: hidden;
-  width: 25%;
-  height: 500px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#blog .cardBlog .card-imageBlog{
-  height: 35%;
-  overflow: hidden;
-  width: 100%;
-}
-#blog .cardBlog .card-imageBlog img{
-   width: 100%;
-  height: 100%;
-  object-fit: cover;
- 
-}
-.card-contentBlog .top{
-  display: flex;
-  padding: 0.5rem;
-  justify-content: space-between;
-  
-}
-.card-contentBlog .top li{
-  display: flex;
-  align-items: center;
-  
-  /* padding-right: 0.5rem; */
-}
-.card-contentBlog .readmore{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-.card-contentBlog .title{
-text-align: justify;
-padding: 0.5rem;
-}
-.card-contentBlog .description{
-text-align: justify;
-padding: 0rem 0.5rem 0rem 0.5rem;
-}
-.card-contentBlog .readmore a{
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #5623ec;
-  border-radius: 5px;
-  color: #fff;
-}
-.blog-container{
-  display: flex;
-  justify-content: space-evenly;
-}
-.view-all{
-  margin-top: 2.5rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #5623ec;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid #5623ec;
-  
-}
-.view-all:hover{
-color: #5623ec;
-background: transparent;
-}
+
 
 @media (max-width:700px){
     .navbar{

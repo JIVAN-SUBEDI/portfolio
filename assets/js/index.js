@@ -16,7 +16,7 @@ navbar_container.classList.toggle("sticky",window.scrollY > 0);
 
 function navbarchange(){
    // alert("rtes")
-   let navbar = document.getElementById("navbar_items");
+   // let navbar = document.getElementById("navbar_items");
 
    let navbar_container = document.getElementById("navbar");
    
