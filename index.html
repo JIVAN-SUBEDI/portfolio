@@ -373,7 +373,7 @@
     </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- <script src="./assets/js/swiper-bundle.min.js"></script> -->
-    <script src="./assets/js/index.js"></script>
+   <!--<script src="./assets/js/index.js"></script>-->
     <script>
         var typed = new Typed('#text-animation', {
             strings: ['Frontend Developer.', 'Backend Developer.', 'UI Designer.', 'Freelancer.'],
@@ -410,6 +410,61 @@
                 },
             },
         });
+    </script>
+    <script>
+           // for navbar
+   let navbar_button = document.getElementById("navbar-toggle");
+   let navbar = document.getElementById("navbar_items");
+let navbar_container = document.getElementById("navbar");
+let contact_button = document.getElementById("contact-me");
+contact_button.onclick =()=>{
+   window.scrollTo(0,3984)
+}
+   navbar_button.onclick = ()=>{
+      navbar.classList.toggle("active");
+      // navbar_container.classList.toggle("sticky");
+      navbar_container.classList.toggle("active");
+   
+   }
+   var loading = document.getElementsByClassName("loading");
+//for fixed 
+document.addEventListener("scroll",()=>{
+
+navbar_container.classList.toggle("sticky",window.scrollY > 0);
+if(window.scrollY == 0){
+   navbar_container.classList.remove("hide");
+}else{
+   navbar_container.classList.remove("hide");
+
+}
+if(window.scrollY >= 1621 && window.scrollY <= 2620){
+   for(let i=0; i<loading.length; i++){
+      let text = loading[i].innerText;
+      loading[i].style.width = text;
+
+
+   }
+  
+}
+});
+document.onclick = ()=>{
+   if(window.scrollY > 0){
+      navbar_container.classList.add("sticky");
+      navbar_container.classList.toggle("hide");
+   }
+  
+}
+
+function navbarchange(){
+   // alert("rtes")
+   // let navbar = document.getElementById("navbar_items");
+
+   let navbar_container = document.getElementById("navbar");
+  
+   
+   navbar_container.classList.remove("active");
+   navbar.classList.remove("active");
+}
     </script>
 
 </body>
